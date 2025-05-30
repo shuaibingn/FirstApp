@@ -1,0 +1,26 @@
+# Gradle
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration
+local.properties
+
+# IDE files
+.idea/
+*.iml
+.DS_Store
+
+# Log/OS files
+*.log
+
+# NDK
+.cxx/
+.externalNativeBuild/
+
+# Captures
+captures/
+
+# Misc
+*.keystore
