@@ -6,14 +6,13 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import com.example.firstapp.compose.BaiduMap
 
 @Composable
 fun MyApp(modifier: Modifier = Modifier) {
     var clickContinue by remember { mutableStateOf(false) }
 
     if (clickContinue) {
-        BaiduMap()
+        LocationMapScreen()
     } else {
         OnBoardingScreen(modifier = modifier) {
             clickContinue = true
